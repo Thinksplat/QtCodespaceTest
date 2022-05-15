@@ -7,7 +7,7 @@
 class ClickBusiness : public IClickMsg
 {
 public:
-    ClickBusiness(int resetcount, const std::string &angrymessage="Please Stop!") : resetcount(resetcount), angrymessage(angrymessage)
+    ClickBusiness(unsigned int resetcount, const std::string &angrymessage="Please Stop!") : resetcount(resetcount), angrymessage(angrymessage)
     {
     }
 
@@ -15,9 +15,11 @@ public:
     {
         if (clickcount == 0)
         {
+            // Clear out the message (for overflow reset)
             ss.str("");
             ss.clear();
         }
+
         ++clickcount;
 
         if (clickcount == resetcount)
@@ -36,8 +38,8 @@ public:
     }
 
 private:
-    int clickcount = 0;
-    int resetcount = 10;
+    unsigned int clickcount = 0;
+    unsigned int resetcount = 10;
     std::string angrymessage;
     std::stringstream ss;
 };

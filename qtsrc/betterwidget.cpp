@@ -1,8 +1,8 @@
 #include <QtWidgets>
-#include "mainwidget2.h"
+#include "betterwidget.h"
 
 // Constructor for main widget
-MainWidget2::MainWidget2(IClickMsg &clicker, QWidget *parent) :  QWidget(parent), clicker(clicker)
+BetterWidget::BetterWidget(IClickMsg &clicker, QWidget *parent) :  QWidget(parent), clicker(clicker)
 {
     auto button_ = new QPushButton(tr("Push Me!"));
     textBrowser_ = new QTextBrowser();
@@ -18,7 +18,7 @@ MainWidget2::MainWidget2(IClickMsg &clicker, QWidget *parent) :  QWidget(parent)
     setWindowTitle(tr("Connecting buttons to processes.."));
 }
 
-void MainWidget2::buttonClicked()
+void BetterWidget::buttonClicked()
 {
     clicker.Click();
     textBrowser_->setText(clicker.Str().c_str());

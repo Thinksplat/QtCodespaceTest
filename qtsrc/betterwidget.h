@@ -9,12 +9,12 @@ class QTextBrowser;
 
 // This is the declaration of our MainWidget class
 // The definition/implementation is in mainwidget.cpp
-class MainWidget2 : public QWidget
+class BetterWidget : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit MainWidget2(IClickMsg &clicker, QWidget *parent = 0); //Constructor
+    explicit BetterWidget(IClickMsg &clicker, QWidget *parent = 0); //Constructor
 
     Q_SLOT void buttonClicked();
 

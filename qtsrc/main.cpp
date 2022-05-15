@@ -1,6 +1,6 @@
 #include <QtWidgets>
 #include "mainwidget.h"
-#include "mainwidget2.h"
+#include "betterwidget.h"
 #include "clickbusiness.h"
 
 int main(int argc, char *argv[])
@@ -11,13 +11,13 @@ int main(int argc, char *argv[])
 
     auto mainWidget = new MainWidget(&mainwindow);
 
-    ClickBusiness business(10);
+    ClickBusiness business(10, "OMG! Stop!");
 
-    auto mainWidget2 = new MainWidget2(business, &mainwindow);
+    auto betterWidget = new BetterWidget(business, &mainwindow);
 
     auto mainLayout = new QGridLayout;
     mainLayout->addWidget(mainWidget, 0, 0);
-    mainLayout->addWidget(mainWidget2, 1, 0);
+    mainLayout->addWidget(betterWidget, 0, 1);
     mainwindow.setLayout(mainLayout);
 
     mainwindow.show();

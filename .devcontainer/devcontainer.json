@@ -21,7 +21,8 @@
 	"extensions": [
 		"ms-vscode.cpptools",
 		"ms-vscode.cmake-tools",
-		"GitHub.copilot"
+		"GitHub.copilot",
+		"hbenl.vscode-test-explorer"
 	],
 	"forwardPorts": [
 		5900,
