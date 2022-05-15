@@ -23,6 +23,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
         qtchooser qt5-qmake qtbase5-dev-tools qtmultimedia5-dev qttools5-dev luarocks\
         ccache libpugixml-dev libqt5texttospeech5-dev qtspeech5-flite-plugin         \
         qtspeech5-speechd-plugin libqt5opengl5-dev ninja-build firefox-esr           \
+        inotify-tools \
     && apt-get clean                                        \
     && rm -rf /var/lib/apt/lists/*
 

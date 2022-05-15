@@ -19,10 +19,7 @@ enable_testing()
 
 FILE(GLOB TEST_SRCS *.cpp)
 
-# include_directories(
-#   ${CMAKE_CURRENT_SOURCE_DIR}
-#   ${CMAKE_CURRENT_SOURCE_DIR}/bsp-linux
-# )
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/../lib")
 
 add_executable(
   all_tests
@@ -34,4 +31,6 @@ target_link_libraries(
 )
 
 include(GoogleTest)
+
+
 gtest_discover_tests(all_tests)

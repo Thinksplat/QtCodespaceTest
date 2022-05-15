@@ -7,7 +7,7 @@
 class ClickBusiness : public IClickMsg
 {
 public:
-    ClickBusiness(int resetcount) : resetcount(resetcount)
+    ClickBusiness(int resetcount, const std::string &angrymessage="Please Stop!") : resetcount(resetcount), angrymessage(angrymessage)
     {
     }
 
@@ -22,7 +22,7 @@ public:
 
         if (clickcount == resetcount)
         {
-            ss << "BUSINESS: You pushed the button " << resetcount << " times!" << std::endl;
+            ss << "BUSINESS: " << angrymessage << " You pushed the button " << resetcount << " times!" << std::endl;
             clickcount = 0;
         }
         else
@@ -38,6 +38,7 @@ public:
 private:
     int clickcount = 0;
     int resetcount = 10;
+    std::string angrymessage;
     std::stringstream ss;
 };
 

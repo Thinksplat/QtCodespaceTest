@@ -10,6 +10,8 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/../lib")
+
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 FILE(GLOB SRC_FILES *.cpp)
