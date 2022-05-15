@@ -1,0 +1,14 @@
+[
+  {
+    "file": "qtsrc/betterwidget.cpp",
+    "sha256": "a94e635c4d1dbe67ac7bff0e4204a2bf60f207366f7c459217d46142b57d9853"
+  },
+  {
+    "file": "qtsrc/betterwidget.h",
+    "sha256": "545e202a812c2681dd08454564636ab3feca17a5b467122b2a3f71d553af6c08"
+  },
+  {
+    "file": "qtsrc/main.cpp",
+    "sha256": "ca28de4f998a132eaa5be894e58ad67cee2a0c8b640feb34ed53322499760b31"
+  }
+]
