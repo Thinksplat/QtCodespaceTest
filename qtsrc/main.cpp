@@ -20,7 +20,6 @@ int main(int argc, char *argv[])
     mainLayout->addWidget(betterWidget, 0, 1);
     mainwindow.setLayout(mainLayout);
 
-
     mainwindow.show();
     return app.exec();
 }

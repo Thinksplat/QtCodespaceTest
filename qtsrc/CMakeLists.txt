@@ -20,4 +20,10 @@ add_executable(qtsrc
     ${SRC_FILES}
 )
 
+add_custom_command(TARGET qtsrc 
+WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/..
+    PRE_BUILD COMMAND node utils/checkfrozen.js frozen.json)
+
+
+
 target_link_libraries(qtsrc Qt5::Widgets)
