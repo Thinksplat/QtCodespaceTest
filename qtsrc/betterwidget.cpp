@@ -1,10 +1,9 @@
 #include <QtWidgets>
 #include "betterwidget.h"
 
-// Constructor for main widget
 BetterWidget::BetterWidget(IClickMsg &clicker, QWidget *parent) :  QWidget(parent), clicker(clicker)
 {
-    auto button_ = new QPushButton(tr("Push Me!"));
+    auto button_ = new QPushButton(tr("Better Push Me!"));
     textBrowser_ = new QTextBrowser();
 
     auto mainLayout = new QGridLayout;

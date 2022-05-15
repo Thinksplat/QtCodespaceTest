@@ -7,8 +7,6 @@
 class QPushButton;
 class QTextBrowser;
 
-// This is the declaration of our MainWidget class
-// The definition/implementation is in mainwidget.cpp
 class BetterWidget : public QWidget
 {
     Q_OBJECT

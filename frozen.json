@@ -1,14 +1,14 @@
 [
   {
-    "file": "qtsrc/betterwidget.cpp",
-    "sha256": "a94e635c4d1dbe67ac7bff0e4204a2bf60f207366f7c459217d46142b57d9853"
-  },
-  {
     "file": "qtsrc/main.cpp",
     "sha256": "08173a97a4ff3b8dc8e241f104852645d50d7f1dec40943038aec66476bd5e4a"
   },
   {
     "file": "qtsrc/betterwidget.h",
-    "sha256": "4de4b4d27547ab008236cb7ff87c82e52e78b15d822e550cf1a32c2228bfbf63"
+    "sha256": "adc74edd7ae2c68a0e4165ae0562cfbde61d95bff1fd00e007b17013a8318ab1"
+  },
+  {
+    "file": "qtsrc/betterwidget.cpp",
+    "sha256": "67ee5369cc4b5dddcb72454551cdd812f880c54c56a30ae0f9cb09e678474ab1"
   }
 ]
